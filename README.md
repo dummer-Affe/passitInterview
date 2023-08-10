@@ -1,16 +1,23 @@
-# passapp
+# PassIt App
 
-A new Flutter project.
+Flutter App works with spring backend deployed on railway.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Below you can find the rules for users
 
-A few resources to get you started if this is your first Flutter project:
+## Rules
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- If there is an existing user, user cannot go to signIn/signUp routes
+- Only after logging in as a valid user, user-search option will appear
+- Without valid user, user-search route cannot be reached
+- If the user refreshes the page while on OTP page, user will be sent to login page
+- User needs to verify their 6-digit OTP verification code for login process to succeed
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+- Backend is already deployed on Railway, however if you wanna see the Spring Application visit: https://github.com/dummer-Affe/bootdev
+- Build Flutter application and you are ready to use
+- If you would like to see the deployed version of website you can visit: https://passit-90488.web.app for firebase deployment
+
+

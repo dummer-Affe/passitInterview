@@ -16,8 +16,12 @@ Below you can find the rules for users
 
 ## Usage
 
-- Backend is already deployed on Railway, however if you wanna see the Spring Application visit: https://github.com/dummer-Affe/bootdev
+- Backend is already deployed on Railway, however if you wanna see the Spring Application visit link below
+  https://github.com/dummer-Affe/bootdev
+  
 - Build Flutter application and you are ready to use
-- If you would like to see the deployed version of website you can visit: https://passit-90488.web.app for firebase deployment
+  
+- If you would like to see the deployed version of website you can visit the link below for firebase deployment
+  https://passit-90488.web.app 
 
 

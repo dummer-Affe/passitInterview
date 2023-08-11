@@ -67,7 +67,7 @@ class _OtpPageState extends State<OtpPage> {
                               style: AppFontsPanel.titleLoginPages,
                             ),
                           ),
-                          Image.asset("/images/email.png"),
+                          Image.asset("assets/images/email.png"),
                           const SizedBox(
                             height: 15,
                           ),

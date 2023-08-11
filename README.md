@@ -28,7 +28,7 @@ Below you can find the rules for users
 
 # PassIt App
 
-Flutter App arbeitet mit einem Spring-Backend, das auf der Bahn eingesetzt wird.
+Flutter App arbeitet mit einem Spring-Backend, das auf Railway eingesetzt wird.
 
 Nachfolgend finden Sie die Regeln für Benutzer
 

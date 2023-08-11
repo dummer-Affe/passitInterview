@@ -35,7 +35,7 @@ abstract class _RegisterViewModelBase with Store {
     checkUsername(credentials.username);
     checkPassword(credentials.password);
     checkPasswordMatch(credentials.password, credentials.validationPass);
-    //print("$emailError//$usernameError//$passwordError//$passwordMatchError");
+
     if (!emailError &&
         !usernameError &&
         !passwordError &&
@@ -66,9 +66,7 @@ abstract class _RegisterViewModelBase with Store {
       switch (response.responseType) {
         case ResponseType.hasData:
 
-          //print("------------------");
-          //print(response.data!.data!);
-          //print("------------------");
+
           showAlertDialog(
               context: context,
               description: "Succesfully Created",
@@ -103,13 +101,12 @@ abstract class _RegisterViewModelBase with Store {
 
   @action
   void checkEmail(String email) {
-    print(email);
+
     if (email.isValidEmail == "Email adress is not valid.") {
       emailError = true;
-      print(emailError);
     } else {
       emailError = false;
-      print(emailError);
+
     }
   }
 
@@ -125,9 +122,9 @@ abstract class _RegisterViewModelBase with Store {
 
   @action
   void checkPassword(String pass) {
-    //print("object$pass");
+
     if (pass.isValidPassword == "The value has a minimum of six characters.") {
-      //print("pasdfasdfsadsfasdff");
+
       passwordError = true;
     } else {
       passwordError = false;
@@ -136,10 +133,10 @@ abstract class _RegisterViewModelBase with Store {
 
   @action
   void checkPasswordMatch(String password1, String password2) {
-    //print("object$pass");
+
 
     if (password1 != password2) {
-      //print("passs not equal");
+  
       passwordMatchError = true;
     } else {
       passwordMatchError = false;

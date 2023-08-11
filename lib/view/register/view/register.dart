@@ -64,11 +64,6 @@ class RegisterPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () async {
-                  //var x = DummyProductService();
-                  //var y = await x.getProducts("smartphones");
-                  //print(y.hasData)
-                  // print(y.data!.products![0].brand);
-
                   await viewModel.register(
                       requestData: RegisterRequest(
                           username: usernameController!.text,
@@ -76,7 +71,6 @@ class RegisterPage extends StatelessWidget {
                           password: passwordController!.text),
                       validationPass: passwordMatchController!.text,
                       context: context);
-                  print(viewModel.regSuccess);
                   if (viewModel.regSuccess == true) {
                     usernameController!.clear();
                     emailController!.clear();

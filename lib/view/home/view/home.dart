@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                                 child: FilterTextfield(
                                   controller: TextEditingController(),
                                   onSearched: (value) {
-                                    print(value);
+                               
                                     model.searchCategory(value);
                                   },
                                   backgroundColor: AppColors.searchBar,

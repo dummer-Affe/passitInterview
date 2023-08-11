@@ -78,7 +78,7 @@ abstract class _LoginViewModelBase with Store {
 
   @action
   void checkEmail(String email) {
-    //print(email);
+
     if (email.isValidEmail == "Email adress is not valid.") {
       emailError = true;
     } else {
@@ -88,9 +88,9 @@ abstract class _LoginViewModelBase with Store {
 
   @action
   void checkPassword(String pass) {
-    //print("object$pass");
+
     if (pass.isValidPassword == "The value has a minimum of six characters.") {
-      //print("pasdfasdfsadsfasdff");
+    
       passwordError = true;
     } else {
       passwordError = false;

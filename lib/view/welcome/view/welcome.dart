@@ -57,7 +57,7 @@ class _WelcomePageState extends State<WelcomePage> {
 
   @override
   Widget build(BuildContext context) {
-    //print(widget.isSignUp);
+
     return GetBuilder<AppSettings>(
       builder: (controller) {
         return Scaffold(

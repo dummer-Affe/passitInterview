@@ -12,7 +12,7 @@ class ViewProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(user.hair!.color!);
+
     return Container(
       width: FontSizer(mobile: context.width * 0.9, mid: 500, large: 800).size,
       decoration: BoxDecoration(

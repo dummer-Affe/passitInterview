@@ -27,7 +27,7 @@ abstract class _HomeViewModelBase with Store {
 
   Future<void> getCategories() async {
     var response = await AppSettings.instance.generalService.getCategories();
-    print(response.data!.data);
+
     switch (response.responseType) {
       case ResponseType.hasData:
         categories = response.data!.data;

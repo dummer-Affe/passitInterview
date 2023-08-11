@@ -31,7 +31,7 @@ class _DummyProductPageState extends State<DummyProductPage> {
 
   @override
   Widget build(BuildContext context) {
-    print("id:${widget.id}");
+
     if (widget.id != viewModel.productId) {
       viewModel.init(widget.id);
     }

@@ -63,7 +63,7 @@ class _OtpCodeWidgetState extends State<OtpCodeWidget> {
                 defaultPinTheme: defaultPinTheme,
                 hapticFeedbackType: HapticFeedbackType.lightImpact,
                 onCompleted: (pin) async {
-                  print(pin);
+            
                   setState(() {
                     checkingOtp = true;
                   });

@@ -7,9 +7,6 @@ class CarouselWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("-----");
-    print(imagePathList);
-    print("------");
 
     return CarouselSlider.builder(
         unlimitedMode: true,

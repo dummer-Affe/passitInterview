@@ -26,7 +26,7 @@ abstract class _OtpViewModelBase with Store {
 
   @action
   bool checkOtpValid(String otp) {
-    //print(email);
+
     if (otp.length < 6) {
       otpError = true;
       otpErrorText = "6 Digit Code Is Required";

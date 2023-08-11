@@ -24,4 +24,31 @@ Below you can find the rules for users
 - If you would like to see the deployed version of website you can visit the link below for firebase deployment
 - https://passit-90488.web.app 
 
+/  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /  /
+
+# PassIt App
+
+Flutter App arbeitet mit einem Spring-Backend, das auf der Bahn eingesetzt wird.
+
+Nachfolgend finden Sie die Regeln für Benutzer
+
+## Regeln
+
+- Wenn es einen existierenden Benutzer gibt, kann der Benutzer nicht zu den SignIn/SignUp Routen gehen
+- Erst nach der Anmeldung als gültiger Benutzer erscheint die Option zur Benutzersuche
+- Ohne gültigen Benutzer kann die Benutzersuchroute nicht erreicht werden
+- Wenn der Benutzer die Seite aktualisiert, während er sich auf der OTP-Seite befindet, wird er zur Anmeldeseite weitergeleitet.
+- Der Benutzer muss seinen 6-stelligen OTP-Verifizierungscode verifizieren, damit der Anmeldevorgang erfolgreich ist.
+
+## Verwendung
+
+- Das Backend ist bereits auf der Railway implementiert, aber wenn Sie die Spring-Anwendung sehen möchten, besuchen Sie den folgenden Link
+
+- https://github.com/dummer-Affe/bootdev
+
+- Erstellen Sie die Flutter-Anwendung und Sie sind bereit für den Einsatz
+
+- Wenn Sie die bereitgestellte Version der Website sehen möchten, können Sie den folgenden Link für die Firebase-Bereitstellung besuchen
+
+- https://passit-90488.web.app
 

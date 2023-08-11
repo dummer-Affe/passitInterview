@@ -28,20 +28,20 @@ class _OtpPageState extends State<OtpPage> {
             Positioned(
                 left: 100,
                 child: Image.asset(
-                  "images/elipsbig.png",
+                  "assets/images/elipsbig.png",
                   width: 900,
                 )),
             Positioned(
                 left: 1000,
                 child: Image.asset(
-                  "images/elipsbig.png",
+                  "assets/images/elipsbig.png",
                   width: 400,
                 )),
             Positioned(
                 left: 1000,
                 top: 400,
                 child: Image.asset(
-                  "images/elipsbig.png",
+                  "assets/images/elipsbig.png",
                   width: 600,
                 )),
             Align(

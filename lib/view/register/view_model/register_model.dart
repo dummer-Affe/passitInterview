@@ -51,8 +51,6 @@ abstract class _RegisterViewModelBase with Store {
       {required RegisterRequest requestData,
       required String validationPass,
       required BuildContext context}) async {
-    var tracker = RegistrationTracker.instance;
-
     RegistrationCredentials credentials = RegistrationCredentials(
         email: requestData.email!,
         username: requestData.username!,
@@ -67,7 +65,7 @@ abstract class _RegisterViewModelBase with Store {
 
       switch (response.responseType) {
         case ResponseType.hasData:
-          tracker.register(email: requestData.email!, context: context);
+
           //print("------------------");
           //print(response.data!.data!);
           //print("------------------");
@@ -155,6 +153,7 @@ abstract class _RegisterViewModelBase with Store {
     Widget okButton = TextButton(
       child: const Text("OK"),
       onPressed: () {
+        RegistrationTracker.instance.register(context: context);
         Navigator.pop(context);
       },
     );

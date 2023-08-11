@@ -29,15 +29,10 @@ class RegistrationTracker extends GetxController {
   }
 
   /* ---------------------------------REGISTER PROCESS START----------------------------------- */
-
-  Future<void> register(
-      {required String email, required BuildContext context}) async {
-    await AppUser.instance.register(AuthUserInformations(email: email));
-    successfullReg = true;
-    update();
-    /* ---------------------------------REGISTER PROCESS END----------------------------------- */
+  Future<void> register({required BuildContext context}) async {
+    context.goNamed(NavigationEnums.welcome.name, extra: {"isSignUp": false});
   }
-
+  /* ---------------------------------REGISTER PROCESS END----------------------------------- */
   /* ----------------------------------------------------------------------------------------*/
 
   /* ---------------------------------LOGIN PROCESS START----------------------------------- */
@@ -55,8 +50,6 @@ class RegistrationTracker extends GetxController {
   Future<void> checkOtp({required BuildContext context}) async {
     await AppUser.instance
         .login(informations: AuthUserInformations(email: email), token: token);
-    // var response = await AppSettings.instance.generalService.getCategories();
-    // AppSettings.instance.updateCategories(response.data!.data!);
     context.goNamed(NavigationEnums.home.name);
   }
 }

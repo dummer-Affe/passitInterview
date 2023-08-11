@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:passit/view/dummy_product/view/product.dart';
+import 'package:passit/view/dummy_product/view/product_button.dart';
 
 import '../view_model/dummy_product_model.dart';
 

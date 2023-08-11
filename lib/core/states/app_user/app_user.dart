@@ -33,11 +33,6 @@ class AppUser extends GetxController {
     update();
   }
 
-  Future<void> register(AuthUserInformations informations) async {
-    _informations = informations;
-    update();
-  }
-
   Future<bool> checkAuth() async {
     _loginProviderToken = await getToken;
     _informations =

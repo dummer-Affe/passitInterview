@@ -19,7 +19,6 @@ class AppSettings extends GetxController {
   late SharedPreferencesManager _sharedPreferencesManager;
   BuildContext? _context;
   List<String> _categories = [];
-  int pageStackCount = 1;
   late Figma2Flutter figma;
 
   late DeviceMode deviceMode;
